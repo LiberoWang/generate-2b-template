@@ -1,0 +1,20 @@
+<!--%%#include file="/SystemFragment/global/pc_global_css_js.html" -->
+
+<div compId='${componentId}' id="${componentUuid}" type="3" tag="component" componentName="template">
+<div>
+
+<script>
+  const cartAdobePath = '${getResourceUrl("/SystemFragment/adobe/cart.adobe.js")}';
+  const reactdom = 'https://unpkg.com/react-dom@17/umd/react-dom.production.min.js';
+  const react = 'https://unpkg.com/react@17/umd/react.production.min.js';
+
+  flash_fe_core_tool.$AsyncLoadFileManagement.load(react).then(() => {
+    flash_fe_core_tool.$AsyncLoadFileManagement.load(reactdom).then(() => {
+      try {
+        $leTemplateInit();
+      } catch(err) {
+        console.log('$leDemoInit Error:',err)
+      }
+    });
+  });
+</script>
