@@ -1,7 +1,7 @@
 /**
- * httlName: 和CMS后台上传Components的时候与html模板中engin.xxx保持一致（xxx即是httlName）
- * library: 即是入口文件导出的初始化函数名称(initialize),用于httl文件的script脚本的初始化执行
- * componentName: 与httl最外层div设置的componentName保持一致
+ * httlName: when uploading Components with the CMS, it's the same as 'engune.xxx' in the html template ('xxx' is the httlName).
+ * library: the name of the initialization function that just like 'initialize' exported by the entry file. And it's used for initializetion execution in the script of the httl file.
+ * componentName: it's the same as the componentName that set in the outermost div of httl.
  */
 
 const componentList = [
@@ -18,10 +18,10 @@ const componentList = [
 ];
 
 module.exports = (mode) => {
-  // build打包
+  // production build
   if (mode === 'production') return componentList;
   
-  // dev本地启动
+  // dev build
   let entry = {};
   componentList.forEach(component => {
     component.list.forEach(item => {
