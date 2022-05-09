@@ -3680,6 +3680,11 @@ htmlparser2@^6.1.0:
     domutils "^2.5.2"
     entities "^2.0.0"
 
+httl-trans-webpack-plugin@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.npmmirror.com/httl-trans-webpack-plugin/-/httl-trans-webpack-plugin-1.0.2.tgz#e3ad7d02a06cc41524ec945bfea3eb665810f18a"
+  integrity sha512-SFNTHrzB75VBvQcgXd5cNg9s1FmXiBNHjxIpbeH27oA3qkxWVsxrO7VxuVp/bYXCGUQgrc13r15F8DoAoSxt+Q==
+
 http-deceiver@^1.2.7:
   version "1.2.7"
   resolved "https://registry.npmmirror.com/http-deceiver/-/http-deceiver-1.2.7.tgz#fa7168944ab9a519d337cb0bec7284dc3e723d87"

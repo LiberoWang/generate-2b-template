@@ -1,11 +1,7 @@
-function initialize() {
-  const { flash_fe_core_tool } = window;
-  flash_fe_core_tool.$AsyncLoadFileManagement.load(`${flash_fe_core_tool.$adobe.getAdobeVersionPath(cartAdobePath)}`);
-  
-  window.doAdobe = function(){
-    return flash_fe_core_tool.$AsyncLoadFileManagement.load(`${flash_fe_core_tool.$adobe.getAdobeVersionPath(cartAdobePath)}`)
-  }
+// import loadScripts from '@utils/loadScripts';
 
+function initialize() {
+  console.log('initialize start:');
   const Content  = require('./Content').default;
 
   window.ReactDOM.render(
@@ -14,8 +10,13 @@ function initialize() {
   );
 }
 
-if (!$PRODUCTION) {
-  initialize();
-}
+// if (!$PRODUCTION) {
+//   const react = 'https://unpkg.com/react@17/umd/react.development.js';
+//   const reactdom = 'https://unpkg.com/react-dom@17/umd/react-dom.development.js';
+//   loadScripts([react, reactdom]).then(() => {
+//     initialize()
+//   });
+//   initialize();
+// }
 
 export default initialize;

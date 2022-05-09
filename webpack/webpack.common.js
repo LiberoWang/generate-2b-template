@@ -52,7 +52,7 @@ module.exports = {
   },
   plugins: [
     new webpack.DefinePlugin({
-      $PRODUCTION: argv.mode == 'production',
+      $PRODUCTION: argv.mode === 'production',
     })
   ],
   resolve: {

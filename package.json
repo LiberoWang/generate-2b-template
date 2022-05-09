@@ -1,7 +1,7 @@
 {
-  "name": "generate-2b-template",
+  "name": "{{ name }}",
   "version": "1.0.0",
-  "description": "脚手架模板",
+  "description": "{{ description }}",
   "sideEffects": [
     "*.css",
     "*.scss",
@@ -28,6 +28,7 @@
     "copy-webpack-plugin": "^6.0.0",
     "css-loader": "^4.0.0",
     "html-webpack-plugin": "^4.0.0",
+    "httl-trans-webpack-plugin": "^1.0.2",
     "mini-css-extract-plugin": "^1.0.0",
     "node-sass": "6.0.1",
     "resolve-url-loader": "^5.0.0",
